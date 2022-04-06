@@ -1,6 +1,5 @@
 import { createServer, Model, Factory, RestSerializer } from 'miragejs';
 
-
 export function makeServer() {
     const server = createServer({
         serializers: {
@@ -22,7 +21,7 @@ export function makeServer() {
                 id(i){
                     return i
                 },
-                name(i){
+                version(i){
                     return `Version ${i}.0.0`;
                 },
                 description(i){
